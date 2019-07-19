@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:spec": "promises-aplus-tests src/promise.js"
   },
   "author": "",
   "license": "ISC",
