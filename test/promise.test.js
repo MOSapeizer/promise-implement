@@ -1,5 +1,7 @@
-const sum = require('@/promise');
+const MyPromise = require('@/promise');
 
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
+test('can resolve primitive value', () => {
+  const expectTo = 123
+  const p = new MyPromise((resolve) => resolve(expectTo));
+  return p.then(value => expect(value).toBe(expectTo))
 });
